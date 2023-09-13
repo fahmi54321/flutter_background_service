@@ -67,7 +67,7 @@ class _WorkManagerPageState extends State<WorkManagerPage> {
           final userPosition = await Geolocator.getCurrentPosition();
 
           notif.Notification notification = notif.Notification();
-          notification.showNotificationWithoutSound(userPosition);
+          // notification.showNotificationWithoutSound(userPosition);
           break;
         case Workmanager.iOSBackgroundTask:
           debugPrint("The iOS background fetch was triggered");

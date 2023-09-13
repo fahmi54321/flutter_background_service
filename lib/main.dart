@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_background_service/home_page.dart';
+import 'package:flutter_background_service_app/home_page.dart';
 
-void main() => runApp(
-      const MyApp(),
-    );
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  runApp(const MyApp());
+}
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
